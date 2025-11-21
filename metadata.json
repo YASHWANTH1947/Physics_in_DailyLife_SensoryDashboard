@@ -1,0 +1,5 @@
+{
+  "name": "College Sensor Dashboard",
+  "description": "A real-time sensor monitoring dashboard for students, visualizing temperature, pulse, and sound data with simulated feeds, alerts, and historical trends.",
+  "requestFramePermissions": []
+}

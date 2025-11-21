@@ -124,11 +124,41 @@ const App: React.FC = () => {
         </div>
 
         {/* Footer / Info for Student */}
-        <footer className="mt-12 text-center text-gray-400 text-sm">
-          <p>College Project - CSE Semester 3</p>
-          <p className="mt-1 text-xs">
-            Data is simulated. Updates every 2 seconds. Keeps 60s history.
-          </p>
+        <footer className="mt-12 pt-8 border-t border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left max-w-4xl mx-auto">
+            {/* Student Details */}
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-sm font-bold text-gray-900 mb-2 uppercase tracking-wide">Student</h3>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><span className="font-medium">Name:</span> KR Yashwanth Reddy</p>
+                <p><span className="font-medium">Roll No:</span> 2401730151</p>
+                <p><span className="font-medium">Course:</span> B.Tech CSE (AI & ML)</p>
+              </div>
+            </div>
+
+            {/* Project/Guide Details */}
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-sm font-bold text-gray-900 mb-2 uppercase tracking-wide">Guided By</h3>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p><span className="font-medium">Teacher:</span> Vicky Kapoor</p>
+                <p>College Project</p>
+                <p>Semester 3</p>
+              </div>
+            </div>
+
+            {/* System Info */}
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+               <h3 className="text-sm font-bold text-gray-900 mb-2 uppercase tracking-wide">About App</h3>
+               <div className="text-xs text-gray-500 space-y-2">
+                 <p>Simulated sensor data for educational demonstration.</p>
+                 <p>Updates every 2s • 60s History</p>
+               </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8 text-gray-400 text-xs">
+            &copy; {new Date().getFullYear()} Sensor Dashboard Project
+          </div>
         </footer>
 
       </div>
